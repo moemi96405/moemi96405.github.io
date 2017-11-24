@@ -1,117 +1,36 @@
-/* Common 共通スタイル*/
-
 body{
-    font-family:-apple-system,
-     BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
-     font-size: 13px;
-     line-height: 1.5;
-     font-weight: normal;
+    font-family:-apple-system, BlinkMacSystemFont, "Helvetica Neue", "Yu Gothic", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
 }
-
-a{
-    color: #2D9CDB;
-    text-decoration: none;
-}
-
-a :hover{
-    color: #CCC;
-    text-decoration: none;
-}
-
+/*header*/
 header{
-    width: 950px;
-    height: 100px;
-    margin: 0 auto;
+    width: 100%;
+    height: 600px;
+    background: url(../img/mein.jpg) center center no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
 }
 
-    header h1{
-        font-family: 'Roboto',
-        sans-serif;
-        font-size: 36px;
-        width: 15rem;
-    }
-    header p{
-        width: 25rem;
-    }
-
-
-/*nav*/
-nav{
-    width: 950px;
-    height: 70px;
+.header-bg{
+    width: 100%;
+    height: 280px;
+    background-color: rgba(255,255,255,0.3)
+}
+header h1{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
     margin: auto;
 }
-     nav ul{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;/*幅に均等に並べる*/
-        padding-left: 0;
-     }
-
-     nav ul li{
-         list-style: none;
-         width: 150px;
-     }
-
-     nav ul li a{
-         color: #000;
-         text-decoration: none;
-         border-bottom: 1px #000 solid;
-         display: block;/*リンクってその部分しかリンクにならない*/
-     }
-
-     nav ul li a:hover{
-         color: #CCC;
-         border-bottom: 1px #CCC solid;
-     }
-
-/* main-visual*/
-.main-visual{
-    width: 950px;
-    margin: 0 auto 30px;
-}
-
-/*container*/
-.container{
-    width: 950px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.container h2{
-    font-family: 'Roboto',sans-serif;
-    font-size: 16px;
-    border-bottom: 1px #000 solid;
-    font-weight: 700;
-}
-
-.wathsnew{
-    width: 310px;
-}
-.about{
-    width: 310px;
-}
-.todaysmenu{
-    width: 310px;
-}
-.todaysmenu-container{
-    display: flex;
-    justify-content: space-between;
-}
-.todaysmenu section{
-    width: 150px;
+header p{
+    text-align: center;
 }
 
 
 
-/* footer*/
-footer{
-    width: 950px;
-    margin: 50px auto;
-}
-footer p{
-    text-align: right;
+section class="profile"{
+    width: 100;
+    
 }

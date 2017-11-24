@@ -29,8 +29,22 @@ header p{
 }
 
 
+section h2{
+    text-align: center;
+}
 
-section class="profile"{
-    width: 100;
-    
+
+section p{
+    text-align: center;
+}
+
+.container{
+    width: 1050px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container section{
+    width: 200px;
+    text-align: center;
 }

@@ -32,7 +32,7 @@ header p{
         background: rgba(0,255,0,0.5);
     }
     header{
-        background-position: -200px center;
+        background-position: -500px center;
     }
 
 }
@@ -45,6 +45,16 @@ section h2{
 section p{
     text-align: center;
 }
+
+@media (max-width:750px) {
+    section{
+        width:100%;
+        padding: 72px 16px;
+        box-sizing: border-box;/*paddingにwidthが加算されなくなる*/
+    }
+
+}
+
 
 .container{
     width: 1050px;

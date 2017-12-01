@@ -27,6 +27,12 @@ header h1{
 header p{
     text-align: center;
 }
+@media (max-width:750px) {
+    .header-bg{
+        background: rgba(255,0,0,0.5);
+    }
+
+}
 
 section h2{
     text-align: center;

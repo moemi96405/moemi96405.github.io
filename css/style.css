@@ -60,4 +60,7 @@ section p{
         widows: 100%;
         display:block;
     }
+    .container section{
+        widows: 100%;
+    }
 }

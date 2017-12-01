@@ -31,6 +31,9 @@ header p{
     .header-bg{
         background: rgba(0,255,0,0.5);
     }
+    header{
+        background-position: -200px center;
+    }
 
 }
 

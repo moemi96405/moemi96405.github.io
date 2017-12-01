@@ -72,15 +72,25 @@
   </footer>
   <!-- 以下プログラミング -->
 <script>
-//変数
+//グローバル変数
 var headerTitle =document.querySelector('#header-title');
-headerTitle.style.color = '#FFFFFF';
 
-var headerSubtitle =document.querySelector('#header-sabtitle');
-headerSubtitle.style.color = '#FFFFFF';
+//イベント　　アクションを起こしたら
+headerTitle.addEventListener('click',changeStyle);
 
-var haederBg = document.querySelector('.header-bg');
-haederBg.style.backgroundColor = '#FF00FF';
+
+//関数
+function changeStyle(){
+    headerTitle.style.color = '#FFFFFF';
+
+    var headerSubtitle =document.querySelector('#header-sabtitle');
+    headerSubtitle.style.color = '#FFFFFF';
+
+    var haederBg = document.querySelector('.header-bg');
+    haederBg.style.backgroundColor = '#FF00FF';
+}
+
+
 
 </script>
 

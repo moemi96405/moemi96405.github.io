@@ -65,5 +65,6 @@ function draw(){
 }
 
 function windowResized(){
+    console.log('拡大縮小');
     resizeCanvas(windowWidth,600);
 }

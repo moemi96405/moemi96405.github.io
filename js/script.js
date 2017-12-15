@@ -15,7 +15,8 @@ function preload(){
 
 function setup(){
     var canvas = createCanvas(windowWidth,600);
-    canvas.parent('container');
+    //header#hederの中にcanbasを入れた
+    canvas.parent('header');
 colorMode(HSB,360,100,100,100);
 
 for(var i = 0; i< NUM; i++){

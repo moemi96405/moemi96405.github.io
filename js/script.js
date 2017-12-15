@@ -14,8 +14,12 @@ var defaultImgW = 1279;
 var defaultImgH = 594;
 //元画像の比率
 var defaultRatio = defaultImgW/defaultImgH;
+//拡大縮小後の幅と高さ
+//初期値として最初の値を入れる
+var scaleImgW = defaultImgW;
+var scaleImgH = defaultImgH;
 
-console.log(defaultRatio);
+
 
 function preload(){
         img = loadImage("img/mein.jpg");
@@ -39,7 +43,8 @@ for(var i = 0; i< NUM; i++){
 
 function draw(){
     background(0);
-    image(img,0,0);//画像の表示
+//画像、X座標、Y座標、幅、高さ
+    image(img,0,0,scaleImgW,scaleImgH);//画像の表示
     noStroke();
 
     for(var i = 0; i<NUM; i++){

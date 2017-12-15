@@ -7,7 +7,15 @@ var diameter = []; //円の直径
 var colors = []; //色
 var NUM = 100; //配列の数
 
+//画像を保存する変数
 var img;
+//元画像のサイズ
+var defaultImgW = 1279;
+var defaultImgH = 594;
+//元画像の比率
+var defaultRatio = defaultImgW/defaultImgH;
+
+console.log(defaultRatio);
 
 function preload(){
         img = loadImage("img/mein.jpg");

@@ -43,6 +43,7 @@ for(var i = 0; i< NUM; i++){
 
 function draw(){
     background(0);
+    imgResize();
 //画像、X座標、Y座標、幅、高さ
     image(img,0,0,scaleImgW,scaleImgH);//画像の表示
     noStroke();
@@ -68,10 +69,15 @@ function windowResized(){
     console.log('拡大縮小');
     resizeCanvas(windowWidth,600);
 
-    if(windowWidth > defaultImgW){
-//画像の幅をウィンドウ幅と同じにする
-    scaleImgW = windowWidth;
-    //画像の高さを伸びた幅に合わせて変化させる
-    scaleImgH = windowWidth/defaultRatio;
-    }
+    imgResize();
+}
+
+function imgResize(){
+
+        if(windowWidth > defaultImgW){
+    //画像の幅をウィンドウ幅と同じにする
+        scaleImgW = windowWidth;
+        //画像の高さを伸びた幅に合わせて変化させる
+        scaleImgH = windowWidth/defaultRatio;
+        }
 }
